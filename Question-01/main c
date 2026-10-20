@@ -1,0 +1,19 @@
+    int distance;
+    char member[10];
+    float fare = 100;
+
+    scanf("%d", &distance);
+    scanf("%s", member);
+
+    if (distance > 10) {
+        fare += (distance - 10) * 20;
+    }
+
+    if (member[0] == 't' || member[0] == 'T') {
+        fare = fare - (fare * 0.10);
+    }
+
+    printf("Final Fare: ₹%.0f\n", fare);
+
+    return 0;
+}
