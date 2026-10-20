@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int A, B, C, car;
+
+    scanf("%d %d %d %d", &A, &B, &C, &car);
+
+    if (car <= A) {
+        printf("A");
+    } else if (car <= A + B) {
+        printf("B");
+    } else if (car <= A + B + C) {
+        printf("C");
+    } else {
+        printf("No path exists");
+    }
+
+    return 0;
+}
